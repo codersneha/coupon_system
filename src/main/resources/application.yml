@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: coupon_system
+  datasource:
+    url: jdbc:mysql://localhost:3306/coupon_system?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Sneha25Nov
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update   # validate | update | create | create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
